@@ -6,11 +6,11 @@ function AboutMe() {
   return (
     <Container className="text-center">
       <Row>
-        <Col lg={6} md={12}>
+        <Col lg={6} md={6} sm={12}>
           <img src={Portrait}></img>
         </Col>
 
-        <Col lg={6} md={12}>
+        <Col lg={6} md={6} sm={12}>
           <h5>About Me</h5>
           <p>
             Web Developer who loves solving difficult problems and finding efficient ways to
