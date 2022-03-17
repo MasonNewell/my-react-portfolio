@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Portrait from "../images/portrait.jpg";
+import "../styles/aboutMe.css";
 
 function AboutMe() {
   return (
-    <Container className="text-center">
+    <Container className="text-center about-me-container py-4">
       <Row>
         <Col lg={6} md={6} sm={12}>
-          <img src={Portrait}></img>
+          <img className="portrait" src={Portrait}></img>
         </Col>
 
         <Col lg={6} md={6} sm={12}>
