@@ -5,7 +5,6 @@ import AboutMe from "../components/AboutMe";
 function Home() {
   return (
     <>
-      <h1>Home</h1>
       <AboutMe />
       <SkillsList />
     </>
