@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, ListGroup } from "react-bootstrap";
+import "../styles/skillsList.css";
 
 function SkillsList() {
   return (
-    <Container className="d-flex justify-content-center text-center">
-      <ListGroup className="list-group-flush">
+    <Container className="d-flex justify-content-center text-center skills-container">
+      <ListGroup className="list-group-flush skills-list">
         <h4>Proficiencies</h4>
         <ListGroup.Item>React</ListGroup.Item>
         <ListGroup.Item>Node</ListGroup.Item>
