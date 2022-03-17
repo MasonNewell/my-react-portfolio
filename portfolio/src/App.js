@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import NavigationBar from "./components/NavigationBar";
 import Portfolio from "./pages/Portfolio";
 import Hero from "./components/Hero";
+import "./index.css";
 
 function App() {
   return (
