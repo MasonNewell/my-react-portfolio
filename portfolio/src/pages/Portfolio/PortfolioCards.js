@@ -13,8 +13,10 @@ function PortfolioCards() {
             <Card className="h-100">
               <Card.Img src={item.img} alt="Card image" />
               <Card.ImgOverlay>
-                <Card.Title>{item.title}</Card.Title>
-                <Card.Text>{item.text}</Card.Text>
+                <Container className="bg-dark text-white">
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>{item.text}</Card.Text>
+                </Container>
               </Card.ImgOverlay>
             </Card>
           </Col>
