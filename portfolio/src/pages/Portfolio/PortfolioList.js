@@ -10,6 +10,21 @@ const PortfolioList = [
     title: "RoomFinders",
     text: "Uses Roomster API to find rental properties",
   },
+  {
+    img: budgetTracker,
+    title: "Budget Tracker",
+    text: "MongoDB/Mongoose/IndexedDB to keep track of budget info",
+  },
+  {
+    img: techBlog,
+    title: "Tech Blog",
+    text: "Node/Express/MySQL",
+  },
+  {
+    img: workoutTracker,
+    title: "Workout Tracker",
+    text: "Node/Express/NoSQL/MongoDB",
+  },
 ];
 
 export default PortfolioList;
