@@ -1,8 +1,12 @@
 import React from "react";
-import PortfolioList from "./Portfolio/PortfolioList";
+import PortfolioCards from "./Portfolio/PortfolioCards";
 
 function Portfolio() {
-  return <div>Portfolio</div>;
+  return (
+    <div>
+      <PortfolioCards />
+    </div>
+  );
 }
 
 export default Portfolio;
