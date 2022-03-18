@@ -9,8 +9,8 @@ function PortfolioCards() {
     <Container>
       <Row>
         {PortfolioList.map((item, index) => (
-          <Col md={6} sm={12} key={index}>
-            <Card>
+          <Col md={6} sm={12} key={index} className="p-4">
+            <Card className="h-100">
               <Card.Img src={item.img} alt="Card image" />
               <Card.ImgOverlay>
                 <Card.Title>{item.title}</Card.Title>
