@@ -5,17 +5,19 @@ import techBlog from "../../images/Projects/techBlog.png";
 import workoutTracker from "../../images/Projects/workoutTracker.png";
 import sportsTracker from "../../images/Projects/sportsTracker.png";
 import bookSearchEngine from "../../images/Projects/bookSearchEngine.png";
+import noteTaker from "../../images/Projects/noteTaker.png";
+import weatherDashboard from "../../images/Projects/weatherDashboard.png";
 
 const PortfolioList = [
-  {
-    img: roomf,
-    title: "Room Finder",
-    text: "HTML/CSS/JS",
-  },
   {
     img: sportsTracker,
     title: "Sports Tracker",
     text: "React/Node/Express/MySQL",
+  },
+  {
+    img: roomf,
+    title: "Room Finder",
+    text: "HTML/CSS/JS",
   },
   {
     img: budgetTracker,
@@ -36,6 +38,16 @@ const PortfolioList = [
     img: bookSearchEngine,
     title: "Book Search Engine",
     text: "React/Graphql",
+  },
+  {
+    img: weatherDashboard,
+    title: "Weather Dashboard",
+    text: "3rd party API",
+  },
+  {
+    img: noteTaker,
+    title: "Note Taker",
+    text: "Node/Express",
   },
 ];
 
