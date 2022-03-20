@@ -1,24 +1,37 @@
 import React from "react";
+import "../../styles/portfolioCards.css";
 import PortfolioList from "./PortfolioList";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 function PortfolioCards() {
   console.log(PortfolioList);
 
+  const openGithubLink = (url) => {
+    window.open(`${url.target.id}`, "_blank");
+  };
+
   return (
-    <Container>
+    <Container className="card-container">
       <Row>
         {PortfolioList.map((item, index) => (
-          <Col md={6} xs={12} key={index} className="p-4">
-            <Card className="h-100">
+          <Col md={6} xs={12} key={index} className="p-3 my-5">
+            <Card className="h-100 custom-card text-center">
               <Card.Img src={item.img} alt="Card image" />
               <Card.ImgOverlay>
-                <Container className="bg-dark text-white">
+                <Container className="bg-dark">
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.text}</Card.Text>
                 </Container>
               </Card.ImgOverlay>
             </Card>
+            <Button
+              variant="secondary"
+              className="w-100"
+              id={item.githubLink}
+              onClick={openGithubLink}
+            >
+              Visit Repo
+            </Button>
           </Col>
         ))}
       </Row>
