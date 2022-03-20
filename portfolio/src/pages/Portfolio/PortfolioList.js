@@ -3,17 +3,24 @@ import roomf from "../../images/Projects/roomf.png";
 import budgetTracker from "../../images/Projects/budgetTracker.png";
 import techBlog from "../../images/Projects/techBlog.png";
 import workoutTracker from "../../images/Projects/workoutTracker.png";
+import sportsTracker from "../../images/Projects/sportsTracker.png";
+import bookSearchEngine from "../../images/Projects/bookSearchEngine.png";
 
 const PortfolioList = [
   {
     img: roomf,
-    title: "RoomFinders",
-    text: "Uses Roomster API to find rental properties",
+    title: "Room Finder",
+    text: "HTML/CSS/JS",
+  },
+  {
+    img: sportsTracker,
+    title: "Sports Tracker",
+    text: "React/Node/Express/MySQL",
   },
   {
     img: budgetTracker,
     title: "Budget Tracker",
-    text: "MongoDB/Mongoose/IndexedDB to keep track of budget info",
+    text: "MongoDB/IndexedDB",
   },
   {
     img: techBlog,
@@ -23,7 +30,12 @@ const PortfolioList = [
   {
     img: workoutTracker,
     title: "Workout Tracker",
-    text: "Node/Express/NoSQL/MongoDB",
+    text: "Node/Express/MongoDB",
+  },
+  {
+    img: bookSearchEngine,
+    title: "Book Search Engine",
+    text: "React/Graphql",
   },
 ];
 
