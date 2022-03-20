@@ -15,7 +15,7 @@ function PortfolioCards() {
       <Row>
         {PortfolioList.map((item, index) => (
           <Col md={6} xs={12} key={index} className="p-3 my-5">
-            <Card className="h-100 custom-card text-center">
+            <Card className="h-100 custom-card text-center text-white">
               <Card.Img src={item.img} alt="Card image" />
               <Card.ImgOverlay>
                 <Container className="bg-dark">
