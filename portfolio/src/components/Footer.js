@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <Container className="my-4">
+    <Container className="my-5 p-2">
       <div className="fixed-bottom d-flex justify-content-center bg-white px-4">
         <a href="https://github.com/MasonNewell" target="_blank">
           <FaGithub
