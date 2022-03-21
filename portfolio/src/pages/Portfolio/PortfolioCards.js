@@ -14,11 +14,11 @@ function PortfolioCards() {
     <Container className="card-container">
       <Row>
         {PortfolioList.map((item, index) => (
-          <Col md={6} xs={12} key={index} className="p-3 my-5">
+          <Col md={6} xs={12} key={index} className="p-3 my-3">
             <Card className="h-100 custom-card text-center text-white">
               <Card.Img src={item.img} alt="Card image" />
               <Card.ImgOverlay>
-                <Container className="bg-dark">
+                <Container className="container-info w-75 p-2">
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.text}</Card.Text>
                 </Container>
