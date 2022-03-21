@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import NavigationBar from "./components/NavigationBar";
 import Portfolio from "./pages/Portfolio";
 import Hero from "./components/Hero";
+import Contact from "./pages/Contact";
 import "./index.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
     </Router>
