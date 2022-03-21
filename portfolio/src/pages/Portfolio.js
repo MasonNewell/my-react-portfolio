@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioCards from "./Portfolio/PortfolioCards";
+import PortfolioCards from "../components/Portfolio/PortfolioCards";
 
 function Portfolio() {
   return (
