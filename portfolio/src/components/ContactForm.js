@@ -52,7 +52,7 @@ function ContactForm() {
 
   return (
     <div>
-      <Container>
+      <Container className="my-4">
         <form className="form">
           <input
             value={inputFields.name}
