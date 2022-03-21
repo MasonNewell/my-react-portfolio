@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import "../styles/navbar.css";
 
 function NavigationBar() {
   return (
     <>
-      <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+      <Navbar collapseOnSelect className="custom-nav" expand="md" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">Mason Newell</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
