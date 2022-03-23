@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { validateName, validateEmail, validateMessage } from "../utils/helpers";
+import emailjs from "emailjs-com";
 
 function ContactForm() {
   // Name, Email, Message
@@ -26,6 +27,7 @@ function ContactForm() {
 
   //   Form submit
   const handleFormSubmit = (e) => {
+    console.log(inputFields);
     e.preventDefault();
     // Validate fields
     if (!validateName(inputFields.name)) {
@@ -41,6 +43,15 @@ function ContactForm() {
       return;
     }
 
+    emailjs.sendForm("gmail", "email_template", e.target, "xbZZuV1keFh_cYV5L").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
     // Clear fields
     setInputFields({
       name: "",
@@ -53,7 +64,7 @@ function ContactForm() {
   return (
     <div>
       <Container className="my-4">
-        <form className="form">
+        <form onSubmit={handleFormSubmit} className="form">
           <input
             value={inputFields.name}
             className="form-control mb-3"
@@ -81,9 +92,9 @@ function ContactForm() {
           <div>
             <p>{errorMessage}</p>
           </div>
-          <button className="btn btn-dark" type="button" onClick={handleFormSubmit}>
-            Submit
-          </button>
+          <div className="d-flex justify-content-center">
+            <input type="submit" className="btn btn-dark" value="send message"></input>
+          </div>
         </form>
       </Container>
     </div>
