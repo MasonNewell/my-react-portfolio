@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "../styles/navbar.css";
-
+import resume from "../utils/MasonNewell.pdf";
 function NavigationBar() {
   return (
     <>
@@ -14,6 +14,9 @@ function NavigationBar() {
               <Nav.Link href="/">About Me</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
               <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+              <Nav.Link href={resume} download="MasonNewell.pdf" target="_blank">
+                PDF Resume
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
