@@ -1,7 +1,7 @@
 .about-me-container p {
   font-family: "Montserrat", sans-serif;
 }
-
 .portrait {
   border-radius: 50%;
+  height: 400px;
 }
