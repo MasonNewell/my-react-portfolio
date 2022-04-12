@@ -1,6 +1,11 @@
 import React from "react";
 import { Container, ListGroup, Row, Col } from "react-bootstrap";
 import "../styles/skillsList.css";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiZapier, SiJquery, SiGraphql, SiHandlebarsdotjs } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { BiCylinder } from "react-icons/bi";
+import { FiDatabase } from "react-icons/fi";
 
 function SkillsList() {
   return (
@@ -24,34 +29,34 @@ function SkillsList() {
     <Container>
       <Row className="justify-content-around text-center">
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          React
+          React <FaReact />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          Node
+          Node <FaNodeJs />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          Express
+          Express <SiExpress />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          REST API
+          REST API <SiZapier />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          jQuery
+          jQuery <SiJquery />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          MySQL with Sequelize
+          MySQL with Sequelize <GrMysql />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          NoSQL with MongoDB/Mongoose
+          NoSQL with MongoDB/Mongoose <BiCylinder />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          IndexedDB
+          IndexedDB <FiDatabase />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          GraphQL
+          GraphQL <SiGraphql />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
-          Handlebars
+          Handlebars <SiHandlebarsdotjs />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
           Bootstrap
