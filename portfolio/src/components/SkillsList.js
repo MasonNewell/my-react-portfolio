@@ -18,10 +18,10 @@ function SkillsList() {
             <br /> Skills & Technologies <br />
           </h3>
         </Col>
-        <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
+        <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
           React <FaReact />
         </Col>
-        <Col sm={12} md={5} className="bg-dark text-white p-3 m-2">
+        <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
           Node <FaNodeJs />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
@@ -45,7 +45,7 @@ function SkillsList() {
         <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
           GraphQL <SiGraphql />
         </Col>
-        <Col sm={12} md={5} className="bg-dark text-white p-3 m-1">
+        <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
           Handlebars <SiHandlebarsdotjs />
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
