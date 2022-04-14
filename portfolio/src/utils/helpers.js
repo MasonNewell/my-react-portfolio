@@ -3,7 +3,7 @@ export function validateName(name) {
 }
 
 export function validateEmail(email) {
-  const regex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+  const regex = /^[a-zA-Z0-9.]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
   return regex.test(String(email));
 }
 
