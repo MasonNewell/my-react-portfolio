@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import { validateName, validateEmail, validateMessage } from "../utils/helpers";
 import emailjs from "emailjs-com";
 
@@ -62,42 +62,52 @@ function ContactForm() {
   };
 
   return (
-    <div>
-      <Container className="my-4">
-        <form onSubmit={handleFormSubmit} className="form">
-          <input
-            value={inputFields.name}
-            className="form-control mb-3"
-            name="name"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="name"
-          />
-          <input
-            value={inputFields.email}
-            className="form-control mb-3"
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-            placeholder="email"
-          />
-          <input
-            value={inputFields.message}
-            className="form-control mb-3"
-            name="message"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="message"
-          />
+    <>
+      <Container className="my-4 border border-secondary p-2">
+        <h2 className="text-center">Contact</h2>
+        <Form onSubmit={handleFormSubmit}>
+          <Form.Group>
+            <Form.Label>Your Name:</Form.Label>
+            <input
+              value={inputFields.name}
+              className="form-control mb-3"
+              name="name"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="name"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Your Email:</Form.Label>
+            <input
+              value={inputFields.email}
+              className="form-control mb-3"
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="name@example.com"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Your Message:</Form.Label>
+            <input
+              value={inputFields.message}
+              className="form-control mb-3"
+              name="message"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="message"
+            />
+          </Form.Group>
           <div>
             <p>{errorMessage}</p>
           </div>
           <div className="d-flex justify-content-center">
             <input type="submit" className="btn btn-dark" value="send message"></input>
           </div>
-        </form>
+        </Form>
       </Container>
-    </div>
+    </>
   );
 }
 
