@@ -11,7 +11,7 @@ import { TiCode } from "react-icons/ti";
 function SkillsList() {
   return (
     <Container>
-      <Row className="justify-content-around text-center">
+      <Row className="justify-content-around text-center p-2">
         <Col xs={12}>
           <h3>
             <TiCode />
