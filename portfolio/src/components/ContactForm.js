@@ -63,9 +63,9 @@ function ContactForm() {
 
   return (
     <>
-      <Container className="my-4 border border-secondary p-2">
+      <Container className="my-2 p-2">
         <h2 className="text-center">Contact</h2>
-        <Form onSubmit={handleFormSubmit}>
+        <Form onSubmit={handleFormSubmit} className="border border-secondary p-3">
           <Form.Group>
             <Form.Label>Your Name:</Form.Label>
             <input
@@ -103,7 +103,11 @@ function ContactForm() {
             <p>{errorMessage}</p>
           </div>
           <div className="d-flex justify-content-center">
-            <input type="submit" className="btn btn-dark" value="send message"></input>
+            <input
+              type="submit"
+              className="btn btn-success rounded-lg w-50 text-dark"
+              value="Send Message"
+            ></input>
           </div>
         </Form>
       </Container>
