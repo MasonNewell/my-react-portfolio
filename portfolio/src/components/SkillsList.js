@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, ListGroup, Row, Col } from "react-bootstrap";
 import "../styles/skillsList.css";
-import { FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaBootstrap, FaHtml5 } from "react-icons/fa";
 import { SiExpress, SiZapier, SiJquery, SiGraphql, SiHandlebarsdotjs } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { BiCylinder } from "react-icons/bi";
@@ -50,6 +50,9 @@ function SkillsList() {
         </Col>
         <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
           Bootstrap <FaBootstrap />
+        </Col>
+        <Col sm={12} md={5} className="bg-dark text-white p-2 m-2">
+          HTML/CSS <FaHtml5 />
         </Col>
       </Row>
     </Container>
