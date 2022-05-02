@@ -3,9 +3,9 @@ import PortfolioCards from "../components/Portfolio/PortfolioCards";
 
 function Portfolio() {
   return (
-    <div>
+    <>
       <PortfolioCards />
-    </div>
+    </>
   );
 }
 
