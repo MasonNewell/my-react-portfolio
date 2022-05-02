@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form } from "react-bootstrap";
+import { Container, Form, Modal } from "react-bootstrap";
 import { validateName, validateEmail, validateMessage } from "../utils/helpers";
 import emailjs from "emailjs-com";
 
@@ -59,12 +59,18 @@ function ContactForm() {
       message: "",
     });
     setErrorMessage("");
+    handleShow();
   };
+
+  //  Modal
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
       <Container className="my-2 p-2">
-        <h2 className="text-center">Contact</h2>
+        <h2 className="text-center">Message for Mason</h2>
         <Form onSubmit={handleFormSubmit} className="border border-secondary p-3">
           <Form.Group>
             <Form.Label>Your Name:</Form.Label>
@@ -110,6 +116,13 @@ function ContactForm() {
             ></input>
           </div>
         </Form>
+
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Message Sent!</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Mason will be in contact with you shortly.</Modal.Body>
+        </Modal>
       </Container>
     </>
   );
