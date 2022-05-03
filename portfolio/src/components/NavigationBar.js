@@ -11,7 +11,6 @@ function NavigationBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">About Me</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
               <Nav.Link href="/portfolio">Portfolio</Nav.Link>
               <Nav.Link href={resume} download="MasonNewell.pdf" target="_blank">
