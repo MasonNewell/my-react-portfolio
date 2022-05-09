@@ -111,7 +111,7 @@ function ContactForm() {
           <div className="d-flex justify-content-center">
             <input
               type="submit"
-              className="btn btn-dark text-white rounded-lg w-50 text-dark"
+              className="btn btn-dark text-white rounded-lg text-dark "
               value="Send Message"
             ></input>
           </div>
