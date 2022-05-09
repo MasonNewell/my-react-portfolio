@@ -17,7 +17,7 @@ function AboutMe() {
             <img className="portrait" src={Portrait}></img>
           </Col>
 
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} className="my-5">
             <h5>About Me</h5>
             <p>
               Web Developer who loves solving difficult problems and finding efficient ways to
