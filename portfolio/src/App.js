@@ -5,12 +5,12 @@ import Portfolio from "./pages/Portfolio";
 import Hero from "./components/Hero";
 import Contact from "./pages/Contact";
 import "./index.css";
-import Navigation from "./components/Navigation";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   return (
     <Router>
-      <Navigation />
+      <NavigationBar />
       <Hero />
       <Routes>
         <Route path="/" element={<Home />}></Route>
